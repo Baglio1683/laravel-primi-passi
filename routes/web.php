@@ -19,3 +19,24 @@ Route::get('/', function () {
     return view('home', compact('Hello'));
 
 });
+
+
+Route::get('/list', function () {
+
+    $Hello = "Hello I'am The list"; 
+    return view('list', compact('Hello'));
+
+});
+
+
+Route::get('/movie', function () {
+
+    $Hello = "Hello I'am The list of movies"; 
+    return view('movie', compact('Hello'));
+
+});
+
+
+
+
+

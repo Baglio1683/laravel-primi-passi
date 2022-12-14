@@ -15,15 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $Hello = "Hello World Dinamic"; 
-    return view('home', compact('Hello'));
+    $Name_buttons = [
+        'List' => 'Lista Persone',
+        'Movies' => 'Lista Film',
+        'Foods' => 'Lista Cibo'
+    ]; 
+    return view('home', $Name_buttons);
 
 });
 
 
 Route::get('/list', function () {
 
-    $Hello = "Hello I'am The list"; 
+    $Hello = "Hello I am The list"; 
     return view('list', compact('Hello'));
 
 });
@@ -31,7 +35,7 @@ Route::get('/list', function () {
 
 Route::get('/movie', function () {
 
-    $Hello = "Hello I'am The list of movies"; 
+    $Hello = "Hello I am The list of movies"; 
     return view('movie', compact('Hello'));
 
 });
@@ -39,7 +43,7 @@ Route::get('/movie', function () {
 
 Route::get('/food', function () {
 
-    $Hello = "Hello I'am The list of foods"; 
+    $Hello = "Hello I am The list of foods"; 
     return view('food', compact('Hello'));
 
 });

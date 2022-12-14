@@ -14,9 +14,9 @@
     <header class="d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col"><a class='btn btn-primary' href="/list">Lista Persone</a></div>
-                <div class="col"><a class='btn btn-primary' href="/movie">Lista Film</a></div>
-                <div class="col"><a class='btn btn-primary' href="/food">Lista Cibo</a></div>
+                <div class="col"><a class='btn btn-primary' href="/list">{{ $List }}</a></div>
+                <div class="col"><a class='btn btn-primary' href="/movie">{{ $Movies }}</a></div>
+                <div class="col"><a class='btn btn-primary' href="/food">{{ $Foods }}</a></div>
             </div>
         </div>
 

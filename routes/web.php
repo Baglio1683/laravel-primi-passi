@@ -37,6 +37,12 @@ Route::get('/movie', function () {
 });
 
 
+Route::get('/food', function () {
+
+    $Hello = "Hello I'am The list of foods"; 
+    return view('food', compact('Hello'));
+
+});
 
 
 

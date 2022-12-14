@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $Hello = "Hello World Dinamic"; 
+    return view('home', compact('Hello'));
+
 });

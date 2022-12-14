@@ -26,9 +26,15 @@ Route::get('/', function () {
 
 
 Route::get('/list', function () {
-
-    $Hello = "Hello I am The list"; 
-    return view('list', compact('Hello'));
+ 
+    $list= [
+        'list_people' =>[
+        'people1' => 'Alberto Baglivi',
+        'people2' => 'Ciccio Pasticcio',
+        'people3' => 'Mike Tyson'
+        ]
+    ]; 
+    return view('list', $list);
 
 });
 

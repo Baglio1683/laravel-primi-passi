@@ -12,7 +12,12 @@
 <body>
 
 
-    <h1>{{ $Hello }}</h1>
+    <h1>Lista Persone</h1>
+    <ul>
+        @foreach ($list_people as $item)
+            <li>{{ $item }}</li>
+        @endforeach
+    </ul>
     <a href="/">Home</a>
 
 </body>

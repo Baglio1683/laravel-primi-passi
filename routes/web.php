@@ -28,6 +28,7 @@ Route::get('/', function () {
 Route::get('/list', function () {
  
     $list= [
+        'Hello' => "Lista Persone",
         'list_people' =>[
         'people1' => 'Alberto Baglivi',
         'people2' => 'Ciccio Pasticcio',
@@ -41,16 +42,30 @@ Route::get('/list', function () {
 
 Route::get('/movie', function () {
 
-    $Hello = "Hello I am The list of movies"; 
-    return view('movie', compact('Hello'));
+    $list= [
+        'Hello' => "Lista Film", 
+        'list_movie' =>[
+        'people1' => 'Jurassik Park',
+        'people2' => 'Guerre Stellari',
+        'people3' => 'Il Grinch'
+        ]
+    ]; 
+    return view('movie', $list);
 
 });
 
 
 Route::get('/food', function () {
-
-    $Hello = "Hello I am The list of foods"; 
-    return view('food', compact('Hello'));
+    
+    $list= [
+        'Hello' => "Lista Cibo",
+        'list_food' =>[
+        'people1' => 'Lasagna',
+        'people2' => 'Pizza',
+        'people3' => 'Spaghetti'
+        ]
+    ]; 
+    return view('food', $list);
 
 });
 

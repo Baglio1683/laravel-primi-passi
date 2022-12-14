@@ -12,7 +12,7 @@
 <body>
 
 
-    <h1>Lista Persone</h1>
+    <h1>{{ $Hello }}</h1>
     <ul>
         @foreach ($list_people as $item)
             <li>{{ $item }}</li>

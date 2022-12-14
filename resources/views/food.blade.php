@@ -11,6 +11,11 @@
 <body>
 
     <h1>{{ $Hello }}</h1>
+    <ul>
+        @foreach ($list_food as $item)
+            <li>{{ $item }}</li>
+        @endforeach
+    </ul>
     <a href="/">Home</a>
 </body>
 

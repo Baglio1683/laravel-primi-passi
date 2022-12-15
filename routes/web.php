@@ -22,7 +22,7 @@ Route::get('/', function () {
     ]; 
     return view('home', $Name_buttons);
 
-});
+})->name('home');
 
 
 Route::get('/list', function () {
@@ -37,7 +37,7 @@ Route::get('/list', function () {
     ]; 
     return view('list', $list);
 
-});
+})->name('list');
 
 
 Route::get('/movie', function () {
@@ -52,7 +52,7 @@ Route::get('/movie', function () {
     ]; 
     return view('movie', $list);
 
-});
+})->name('movie');
 
 
 Route::get('/food', function () {
@@ -67,7 +67,7 @@ Route::get('/food', function () {
     ]; 
     return view('food', $list);
 
-});
+})->name('food');
 
 
 

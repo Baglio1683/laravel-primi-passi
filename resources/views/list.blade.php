@@ -18,7 +18,7 @@
             <li>{{ $item }}</li>
         @endforeach
     </ul>
-    <a href="/">Home</a>
+    <a href="{{ route('home') }}">Home</a>
 
 </body>
 
